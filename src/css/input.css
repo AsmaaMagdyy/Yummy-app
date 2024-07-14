@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    .row{
+        @apply flex flex-wrap;
+    }
+}
+@layer utilities{
+    .alert-danger{
+        background-color: #F8D7DA;
+        color: #842029;
+    }
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+
+  <body class="bg-[#0D0D0D] overflow-hidden box-border font-sans">
+    <div
+      class="loading-screen fixed top-0 start-0 end-0 bottom-0 bg-black flex justify-center items-center z-30"
+    >
+      <i class="fa fa-spinner m-4 fa-spin fa-5x text-white"></i>
+    </div>
+
+    <!-- ============================Side Nav Bar Start============================== -->
+    <nav
+      class="h-screen w-[360px] bg-slate-200 flex text-base fixed top-0 left-[-288px] z-20"
+    >
+      <div
+        class="side-bar h-full w-4/5 bg-[#0D0D0D] text-[#f9f6f6] capitalize p-8 flex flex-col justify-between"
+      >
+        <ul class="flex flex-col gap-6 relative overflow-hidden">
+          <li>
+            <a
+              class="relative top-[300px] nsearch"
+              data-id="search"
+              href="#search"
+              >search</a
+            >
+          </li>
+          <li>
+            <a
+              class="relative top-[300px] ncate"
+              data-id="categories"
+              href="#categories"
+              >categories</a
+            >
+          </li>
+          <li>
+            <a class="relative top-[300px] narea" data-id="area" href="#area"
+              >area</a
+            >
+          </li>
+          <li>
+            <a
+              class="relative top-[300px] ningre"
+              data-id="ingredients"
+              href="#ingredients"
+              >ingredients</a
+            >
+          </li>
+          <li>
+            <a
+              class="relative top-[300px] ncont"
+              data-id="contact"
+              href="#contact"
+              >contact us</a
+            >
+          </li>
+        </ul>
+        <div class="cursor-pointer">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-globe"></i>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="open-close-part w-1/5 h-full bg-white flex flex-col items-center justify-between py-4"
+      >
+        <img src="./images/logo.png" alt="logo" class="w-3/4" />
+        <i
+          class="open-close-btn fa-solid fa-bars text-[32px] cursor-pointer"
+        ></i>
+        <div>
+          <i class="fa-solid fa-globe block cursor-pointer mb-2"></i>
+          <i class="fa-solid fa-share-nodes block cursor-pointer"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- ============================Side Nav Bar End============================== -->
+    <!-- ============================Home Section Start============================== -->
+    <header class="home">
+      <div class="container py-8 ps-20">
+        <div class="row"></div>
+      </div>
+    </header>
+    <!-- ============================Home Section End============================== -->
+    <!-- ============================Meal Details Section Start============================== -->
+    <section class="meal-details text-[#f9f6f6] relative hidden">
+      <i
+        class="fa-solid fa-x absolute top-6 end-10 text-white cursor-pointer"
+      ></i>
+
+      <div class="container py-12 ps-20">
+        <div class="row gap-x-6"></div>
+      </div>
+    </section>
+    <!-- ============================Meal Details Section End============================== -->
+
+    <!-- ===========================Search Section Start============================== -->
+    <section id="search" class="search hidden">
+      <div class="container w-3/4 md:w-full">
+        <form class="w-full flex flex-wrap justify-center gap-x-8 mt-7">
+          <input
+            class="s-by-name bg-[#0D0D0D] border-[1px] border-gray-500 text-white w-full md:w-2/5 p-3 rounded-lg focus:shadow-blue focus:border-[#86b7fe] outline-none"
+            type="search"
+            placeholder="Search By Name"
+          />
+          <input
+            class="s-by-l bg-[#0D0D0D] border-[1px] border-gray-500 text-white w-full md:w-2/5 p-3 rounded-lg focus:shadow-blue focus:border-[#86b7fe] outline-none"
+            type="search"
+            placeholder="Search By First Letter"
+          />
+        </form>
+        <div class="row py-8"></div>
+      </div>
+    </section>
+    <!-- ===========================Search Section End============================== -->
+    <!-- ===========================Category Section Start============================== -->
+    <section id="categories" class="categories hidden">
+      <div class="container py-8">
+        <div class="row"></div>
+      </div>
+    </section>
+    <!-- ===========================Category Section End============================== -->
+
+    <!-- ===========================Meals Section Start============================== -->
+    <section id="meals" class="meals hidden">
+      <div class="container py-8">
+        <div class="row"></div>
+      </div>
+    </section>
+    <!-- ===========================Meals Section End============================== -->
+    <!-- ===========================Area Section Start============================== -->
+    <section id="area" class="area hidden">
+      <div class="container py-8 ps-20 lg:ps-0 text-white">
+        <div class="row text-center"></div>
+      </div>
+    </section>
+    <!-- ===========================Area Section End============================== -->
+    <!-- ===========================Ingrediants Section Start============================== -->
+    <section id="ingredients" class="ingredients hidden">
+      <div class="container py-8 ps-20 lg:ps-8 text-white">
+        <div class="row text-center"></div>
+      </div>
+    </section>
+    <!-- ===========================Ingrediants Section End============================== -->
+    <!-- ===========================Contact Section Start============================== -->
+    <section id="contact" class="contact hidden">
+      <div class="container w-3/4 md:w-full">
+        <div class="flex py-8 h-screen items-center">
+          <form class="text-center">
+            <div class="w-full flex flex-wrap justify-center gap-8 mt-7">
+              <div class="w-full md:w-[35%]">
+                <input
+                id="name"
+                  class="name border-[1px] border-gray-500 w-full px-3 py-2 rounded-lg focus:shadow-blue focus:border-[#86b7fe] outline-none"
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name"
+                />
+                <div
+                  id="nameAlert"
+                  class="alert-danger w-full mt-2 p-5 rounded-lg hidden"
+                >
+                  Special characters and numbers not allowed
+                </div>
+              </div>
+
+              <div class="w-full md:w-[35%]">
+                <input
+                id="email"
+                  class="email border-[1px] border-gray-500 w-full px-3 py-2 rounded-lg focus:shadow-blue focus:border-[#86b7fe] outline-none"
+                  type="email"
+                  name="email"
+                  placeholder="Enter Your Email"
+                />
+                <div
+                  id="emailAlert"
+                  class="alert-danger w-full mt-2 p-5 rounded-lg hidden"
+                >
+                  Email not valid *exemple@yyy.zzz
+                </div>
+              </div>
+
+              <div class="w-full md:w-[35%]">
+                <input
+                id="phone"
+                  class="phone border-[1px] border-gray-500 w-full px-3 py-2 rounded-lg focus:shadow-blue focus:border-[#86b7fe] outline-none"
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter Your Phone"
+                />
+                <div
+                  id="phoneAlert"
+                  class="alert-danger w-full mt-2 p-5 rounded-lg hidden"
+                >
+                  Enter valid Phone Number
+                </div>
+              </div>
+
+              <div class="w-full md:w-[35%]">
+                <input
+                id="age"
+                  class="age border-[1px] border-gray-500 w-full px-3 py-2 rounded-lg focus:shadow-blue focus:border-[#86b7fe] outline-none"
+                  type="number"
+                  name="age"
+                  placeholder="Enter Your Age"
+                />
+                <div
+                  id="ageAlert"
+                  class="alert-danger w-full mt-2 p-5 rounded-lg hidden"
+                >
+                  Enter valid age
+                </div>
+              </div>
+
+              <div class="w-full md:w-[35%]">
+                <input
+                id="pass"
+                  class="pass border-[1px] border-gray-500 w-full px-3 py-2 rounded-lg focus:shadow-blue focus:border-[#86b7fe] outline-none"
+                  type="password"
+                  name="pass"
+                  placeholder="Enter Your Password"
+                />
+                <div
+                  id="passAlert"
+                  class="alert-danger w-full mt-2 p-5 rounded-lg hidden"
+                >
+                  Enter valid password *Minimum eight characters, at least one
+                  letter and one number:*
+                </div>
+              </div>
+
+              <div class="w-full md:w-[35%]">
+                <input
+                id="repass"
+                  class="repass border-[1px] border-gray-500 w-full px-3 py-2 rounded-lg focus:shadow-blue focus:border-[#86b7fe] outline-none"
+                  type="password"
+                  name="repass"
+                  placeholder="Repassword"
+                />
+                <div
+                  id="repassAlert"
+                  class="alert-danger w-full mt-2 p-5 rounded-lg hidden"
+                >
+                  Enter valid repassword
+                </div>
+              </div>
+            </div>
+
+            <button
+              disabled="true"
+              class="disabled:opacity-50 text-[#DC3545] enabled:opacity-100 enabled:hover:bg-[#DC3545] enabled:hover:text-white border-[1px] border-[#DC3545] p-2 mt-5 rounded-md focus:shadow-danger"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================Contact Section End============================== -->
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
